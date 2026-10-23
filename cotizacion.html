@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Minimal | Cotización</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo-tenue">
+    <header class="ios-header">
+        <div class="logo">Dulce Minimal</div>
+        <button id="menuBtn" class="animated-hamburger" aria-label="Menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div id="iosMenu" class="ios-menu-overlay">
+        <nav class="ios-nav">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="catalogo.html" class="menu-link">Catálogo</a>
+            <a href="cotizacion.html" class="menu-link">Cotización</a>
+        </nav>
+    </div>
+
+    <section class="seccion">
+        <h2>Cotización</h2>
+        <div class="ios-form-container" style="padding-top: 10px;">
+            <p style="text-align: center; color: var(--texto-secundario); font-size: 1.1rem; margin-bottom: 25px;">
+                Llena los datos para enviarte una propuesta a la medida.
+            </p>
+            
+            <form id="formWhatsApp">
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="evento" placeholder="Tipo de evento (Ej. Boda, Cumpleaños)" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha" style="display: block; font-size: 0.85rem; color: var(--texto-secundario); margin-bottom: 5px; margin-left: 5px;">Fecha del evento</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="producto" placeholder="Producto de tu interés" required>
+                </div>
+                
+                <button type="submit" class="ios-btn btn-submit" style="background-color: #34C759; border: none; font-size: 1rem; color: white;">
+                   Contactar por WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
